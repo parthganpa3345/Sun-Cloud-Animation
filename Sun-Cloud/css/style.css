@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    height: 200px;
+    width: 100%;
+    /* border: 2px solid; */
+    background: skyblue;
+    position: relative;
+    overflow: hidden;
+}
+
+.sun {
+    height: 120px;
+    width: 120px;
+    background: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    left: -20px;
+    animation: sun 9s linear infinite;
+    opacity: 0.7;
+}
+
+.cloud1 {
+    height: 130px;
+    width: 200px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    opacity: 0.8;
+    animation: cloud1 6s ease-in-out infinite;
+}
+
+.cloud2 {
+    height: 130px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    opacity: 0.8;
+    animation: cloud2 5s linear infinite;
+}
+
+.cloud3 {
+    height: 130px;
+    width: 200px;
+    position: absolute;
+    top: 65px;
+    right: -30px;
+    opacity: 0.8;
+    animation: cloud3 4s ease-in-out infinite;
+}
+
+.car {
+    height: 130px;
+    width: 200px;
+    position: absolute;
+    top: 100px;
+    left: -13px;
+    animation: car 10s linear infinite;
+}
+
+@keyframes sun {
+    from {
+        top: 35px;
+        left: -20px;
+        opacity: 0.7;
+    }
+    to {
+        top: 20px;
+        left: 110%;
+        opacity: 1;
+    }
+}
+
+@keyframes cloud1 {
+    from {
+        top: 30px;
+        left: 0;
+    }
+    to {
+        top: 30px;
+        left: 110%;
+    }
+}
+
+@keyframes cloud2 {
+    from {
+        top: 0;
+        left: 40%;
+    }
+    to {
+        top: 0px;
+        left: 110%;
+    }
+}
+
+@keyframes cloud3 {
+    from {
+        top: 65px;
+        right: -30px;
+    }
+    to {
+        top: 30px;
+        right: 110%;
+    }
+}
+
+@keyframes car {
+    from {
+        top: 100px;
+        left: -13px;
+    }
+    to {
+        top: 100px;
+        left: 110%;
+    }
+}
